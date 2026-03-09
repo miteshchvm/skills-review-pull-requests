@@ -32,7 +32,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Prepare a branch and pull request
         run: |
@@ -64,12 +64,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: main
 
       - name: Get response templates
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: skills/exercise-toolkit
           path: exercise-toolkit
